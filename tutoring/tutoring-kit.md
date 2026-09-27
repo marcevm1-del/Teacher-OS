@@ -14,7 +14,7 @@ Check local rates before you post, and price at the top of the normal range. You
 |---|---|---|
 | **Single lesson** | 60 min, online or in person | 220 AED |
 | **Term package** (most popular) | 8 × 60 min + marked practice between lessons + the Complete Exam Guide free | 1,600 AED (200/lesson), paid up front |
-| **Exam Bootcamp** (Apr–May 2027) | 4 × 90 min small group (max 6) with a timed mock and written feedback | 600 AED per student |
+| **Exam Bootcamp** (Apr–May 2027) | 4 × 90 min small group (max 6) with timed practice and written feedback. Full plan in `exam-bootcamp.md` | 600 AED per student |
 | **Essay marking** | One Paper 1 Q4 or Paper 2 piece marked with written feedback in 48 h | 90 AED |
 
 Rules: packages are **paid up front**. Cancel with less than 24 hours' notice and the lesson is still paid. Always sell the term package first, because it gives you steady money every month.
