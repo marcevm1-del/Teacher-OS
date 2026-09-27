@@ -57,7 +57,7 @@ Preview file: `previews/composition-pack/FREE-PREVIEW.pdf`
 
 ---
 
-# TPT Listing: 0500 Complete Bundle, final version (all nine products)
+# TPT Listing: 0500 Complete Bundle, final version (all ten products)
 
 This replaces the bundles in `listing-launch-2.md` and `listing-launch-3.md` once all products are live.
 
@@ -65,10 +65,10 @@ This replaces the bundles in `listing-launch-2.md` and `listing-launch-3.md` onc
 IGCSE English 0500 Complete Bundle 2027 | Guide + 6 Paper 1 Mocks + 8 Paper 2 Tasks
 
 ## Price
-$54.99 (bought separately: $79.91, so buyers save 31%)
+$59.99 (bought separately: $86.90, so buyers save 31%)
 
 ## Description
-Everything for the NEW 2027 Cambridge IGCSE First Language English (0500) exam in one bundle: the method, six Paper 1 practice papers, summary and language analysis workbooks, eight directed writing tasks, composition practice and revision cards.
+Everything for the NEW 2027 Cambridge IGCSE First Language English (0500) exam in one bundle: the method, six Paper 1 practice papers, three Paper 1 skills workbooks, eight directed writing tasks, composition practice and revision cards.
 
 INCLUDED
 • IGCSE 0500 Complete Exam Guide 2027 (14 pages): the method for every question on both papers
@@ -76,11 +76,12 @@ INCLUDED
 • Paper 1 Practice Pack Volume 2 (29 pages): Sets 4–6 with original texts and mark schemes
 • Summary Writing Workbook (23 pages): six articles with guided practice and model answers for Q2(a) and 2(b)
 • Language Analysis Workbook (14 pages): six extracts with guided practice and model answers for Q3
+• Extended Response Workbook (23 pages): six passages covering all six Q4 forms, with model answers
 • Paper 2 Directed Writing Pack Volume 1 (27 pages): Tasks 1–4 with annotated model answers
 • Paper 2 Directed Writing Pack Volume 2 (27 pages): Tasks 5–8 with annotated model answers
 • Composition Pack (17 pages): descriptive and narrative toolkits, 20 titles, planning sheets and 4 model compositions
 • Revision Flashcards (32 printable cards): every method, form, technique and timing plan
 
-187 pages covering every question on both papers, enough for two years of Year 10–11 teaching.
+210 pages covering every question on both papers, enough for two years of Year 10–11 teaching.
 
 (Use the same grades, tags and disclaimer as the individual listings. Thumbnail: `previews/bundle/TPT-bundle-thumbnail.png`.)

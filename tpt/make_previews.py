@@ -74,6 +74,15 @@ PRODUCTS = {
             ("Points lists & model answers", "Model summaries under 120 words + 2(b) models", [16, 17]),
             ("Own-words toolkit & mistakes page", "Stop copying, start summarising", [2, 3]),
         ]),
+    "IGCSE-0500-Extended-Response-Workbook-2027.pdf": dict(
+        out="previews/extended-response-workbook", banner="Cambridge IGCSE 0500 · Paper 1 Q4 · 23-page PDF",
+        free_pages=[1, 2, 3, 4],
+        slides=[
+            ("IGCSE 0500 Extended Response Workbook", "Master Paper 1 Question 4 in all six forms", [1]),
+            ("Guided practice: Mine → Stretch → Voice", "Original passages with three-column plans", [4, 5]),
+            ("A model answer for every form", "Journal, report, interview, speech, letter, article", [18, 21]),
+            ("Method, forms & mistakes to avoid", "Stop retelling, start developing", [2, 3]),
+        ]),
     "FREE-IGCSE-0500-2027-Changes-Teacher-Briefing.pdf": dict(
         out="previews/teacher-briefing", banner="FREE · Cambridge IGCSE 0500 · 2027 changes briefing",
         free_pages=[1, 2],
@@ -123,11 +132,11 @@ def slide(src, path, title, sub, pages, banner):
 BUNDLE = dict(
     files=["IGCSE-0500-Complete-Exam-Guide-2027.pdf", "IGCSE-0500-Paper-1-Practice-Pack-2027.pdf",
            "IGCSE-0500-Paper-1-Practice-Pack-Vol-2-2027.pdf", "IGCSE-0500-Summary-Writing-Workbook-2027.pdf",
-           "IGCSE-0500-Language-Analysis-Workbook-2027.pdf",
+           "IGCSE-0500-Language-Analysis-Workbook-2027.pdf", "IGCSE-0500-Extended-Response-Workbook-2027.pdf",
            "IGCSE-0500-Paper-2-Directed-Writing-Pack-2027.pdf", "IGCSE-0500-Paper-2-Directed-Writing-Pack-Vol-2-2027.pdf",
            "IGCSE-0500-Composition-Pack-2027.pdf", "IGCSE-0500-Revision-Flashcards-2027.pdf"],
     title="IGCSE 0500 COMPLETE BUNDLE",
-    sub="9 resources · 187 pages · every question on both papers",
+    sub="10 resources · 210 pages · every question on both papers",
     banner="Updated for the NEW 2027 syllabus · Save 31%",
     out="previews/bundle/TPT-bundle-thumbnail.png")
 

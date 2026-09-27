@@ -6,7 +6,7 @@ cd "$(dirname "$0")/products"
 export NODE_PATH="$(npm root -g)"
 (cd paper1-practice-pack && python3 build.py && python3 build.py ../paper1-practice-pack-vol2)
 (cd paper2-directed-writing-pack && python3 build.py && python3 build.py ../paper2-directed-writing-vol2)
-for p in composition-pack language-workbook summary-workbook revision-cards teacher-briefing department-offer; do
+for p in composition-pack language-workbook summary-workbook extended-response-workbook revision-cards teacher-briefing department-offer; do
   (cd "$p" && python3 build.py)
 done
 cd .. && python3 make_previews.py
