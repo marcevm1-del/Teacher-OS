@@ -4,6 +4,7 @@ The operating system for the Five-Year Vow (2026 → 2031).
 
 | Start here | What it is |
 |---|---|
+| **[`MONEY-START-HERE.md`](MONEY-START-HERE.md)** | **The next 14 days, in order: what to upload, post and send to start earning** |
 | [`PLAN.md`](PLAN.md) | All the goals in order: this week, the next 90 days, 2027 checkpoints, 2028–31 |
 | [`money/debt-and-income.md`](money/debt-and-income.md) | Clearing the 33,000 AED debt and the side-income plan |
 | [`tutoring/tutoring-kit.md`](tutoring/tutoring-kit.md) | **Fastest cash:** prices, adverts, consultation script, message templates |
