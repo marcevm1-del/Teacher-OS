@@ -29,6 +29,15 @@ PRODUCTS = {
             ("Annotated model answers", "Top-band responses with mark schemes", [9, 8]),
             ("Toolkit, planning frame & marking bands", "Teach students to evaluate, not repeat", [3, 4, 25]),
         ]),
+    "IGCSE-0500-Composition-Pack-2027.pdf": dict(
+        out="previews/composition-pack", banner="Cambridge IGCSE 0500 · Paper 2 Section B · 17-page PDF",
+        free_pages=[1, 2, 3, 5],
+        slides=[
+            ("IGCSE 0500 Composition Pack", "Descriptive & narrative writing for Paper 2 Section B", [1]),
+            ("Descriptive & narrative toolkits", "Structures, techniques and traps to avoid", [3, 4]),
+            ("4 annotated model compositions", "Two descriptive, two narrative, with notes", [11, 13]),
+            ("20 titles, planning sheets & workshop", "Ready for lessons, homework and tutoring", [5, 7, 9]),
+        ]),
 }
 
 def box(x, y, h):

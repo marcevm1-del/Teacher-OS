@@ -26,10 +26,10 @@ Publish checklist:
 |---|---|---|---|---|
 | 2 | ✅ **Paper 1 Practice Pack**: 3 original sets of Texts A/B/C, question papers + mark schemes. **BUILT**: `IGCSE-0500-Paper-1-Practice-Pack-2027.pdf`, listing in `listing-launch-2.md` | 29 pp | $9.99 | **Ready now** |
 | 3 | ✅ **Paper 2 Directed Writing Pack**: 4 original Section A tasks (speech, letter, article, report), mark schemes, annotated model answers, toolkit, planning frame. **BUILT**: `IGCSE-0500-Paper-2-Directed-Writing-Pack-2027.pdf`, listing in `listing-launch-3.md` | 27 pp | $9.99 | **Ready now** |
-| 4 | **Composition Pack**: 10 descriptive + 10 narrative prompts, planning sheets, 4 model compositions | 15 pp | $6.99 | Dec 2026 |
+| 4 | ✅ **Composition Pack**: toolkits, 20 titles in 5 sets, planning sheets, upgrade workshop, 4 annotated models. **BUILT**: `IGCSE-0500-Composition-Pack-2027.pdf`, listing in `listing-launch-4.md` | 17 pp | $7.99 | **Ready now** |
 | 5 | **2027 Syllabus Changes: teacher briefing slides** (free, or $3). Gets people into the shop and brings in followers | 10 slides | Free/$3 | Oct 2026 |
 | 6 | **0500 Starter Bundle** (#1 + #2). Listing in `listing-launch-2.md` | — | $18.99 | **As soon as #1 and #2 are live** |
-| 6b | **0500 Complete Bundle** (#1 + #2 + #3). Listing in `listing-launch-3.md` | 70 pp | $24.99 | **As soon as #1–#3 are live** |
+| 6b | **0500 Complete Bundle** (#1–#4). Final listing in `listing-launch-4.md` | 87 pp | $29.99 | **As soon as #1–#4 are live** |
 | 7 | Exam-season **revision booklet** for students (a cut-down version of #1 + practice) | 12 pp | $5.99 | Mar 2027 |
 
 Every product must use **original texts only**. Don't copy Cambridge past papers or mark schemes. Keep the "not endorsed by Cambridge" disclaimer on each one.
