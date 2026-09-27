@@ -138,9 +138,11 @@ def bundle_thumbnail(cfg):
     fit(pg, pymupdf.Rect(30, 86, W - 30, 126), cfg["sub"], 22, "helv", GOLD)
     files = cfg["files"]; n = len(files); top = (n + 1) // 2
     rows = [files[:top], files[top:]]
-    h, gap = 315, 18
+    gap = 18
+    h = min(315, (W - 40 - (top - 1) * gap) / top / A4)   # shrink covers so the widest row fits
     w = h * A4
-    for r, (row, y) in enumerate(zip(rows, (160, 160 + h + 28))):
+    y0 = 130 + (H - 60 - 130 - (2 * h + 30)) / 2          # centre both rows between subtitle and banner
+    for r, (row, y) in enumerate(zip(rows, (y0, y0 + h + 30))):
         x0 = (W - (len(row) * w + (len(row) - 1) * gap)) / 2
         for k, f in enumerate(row):
             rect = pymupdf.Rect(x0 + k * (w + gap), y, x0 + k * (w + gap) + w, y + h)
