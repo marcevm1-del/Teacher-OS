@@ -42,5 +42,7 @@ Rule of thumb: **one product every 2–3 weeks**, worked on during the Wednesday
 
 ## Rebuilding products
 
+- **Everything at once:** `bash tpt/build_all.sh` rebuilds every product PDF, preview and the bundle thumbnail.
+
 - Product sources: `products/<product>/` (text in `content.py`). To rebuild a PDF, run `NODE_PATH=$(npm root -g) python3 build.py` in that folder (needs Playwright and PyMuPDF). Shared styling, fonts and rendering are in `products/common.py`, `products/fonts/` and `products/render.js`.
 - Previews + free preview PDF: `python3 make_previews.py` (add new products to `PRODUCTS`).
