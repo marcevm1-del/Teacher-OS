@@ -24,13 +24,19 @@ Publish checklist:
 
 | # | Product | Size | Price | Target date |
 |---|---|---|---|---|
-| 2 | **Paper 1 Practice Pack**: 3 original sets of Texts A/B/C with questions in the new 4-question format + mark schemes | 20–25 pp | $9.99 | Nov 2026 |
+| 2 | ✅ **Paper 1 Practice Pack**: 3 original sets of Texts A/B/C, question papers + mark schemes. **BUILT**: `IGCSE-0500-Paper-1-Practice-Pack-2027.pdf`, listing in `listing-launch-2.md` | 29 pp | $9.99 | **Ready now** |
 | 3 | **Paper 2 Directed Writing Pack**: 4 original 1(a)/1(b) tasks, planning frames, model answers | 15–20 pp | $8.99 | Nov 2026 |
 | 4 | **Composition Pack**: 10 descriptive + 10 narrative prompts, planning sheets, 4 model compositions | 15 pp | $6.99 | Dec 2026 |
 | 5 | **2027 Syllabus Changes: teacher briefing slides** (free, or $3). Gets people into the shop and brings in followers | 10 slides | Free/$3 | Oct 2026 |
-| 6 | **0500 Complete Bundle** (#1–#4) | — | $29.99 | Dec 2026 |
+| 6 | **0500 Starter Bundle** (#1 + #2). Listing in `listing-launch-2.md` | — | $18.99 | **As soon as #1 and #2 are live** |
+| 6b | **0500 Complete Bundle** (#1–#4) | — | $29.99 | Dec 2026 |
 | 7 | Exam-season **revision booklet** for students (a cut-down version of #1 + practice) | 12 pp | $5.99 | Mar 2027 |
 
 Every product must use **original texts only**. Don't copy Cambridge past papers or mark schemes. Keep the "not endorsed by Cambridge" disclaimer on each one.
 
 Rule of thumb: **one product every 2–3 weeks**, worked on during the Wednesday evening block. Add a short note at the end of each product pointing to the next one (and to the bundle).
+
+## Rebuilding products
+
+- Practice pack source: `products/paper1-practice-pack/` (text in `content.py`). To rebuild the PDF, run `NODE_PATH=$(npm root -g) python3 build.py` (needs Playwright and PyMuPDF).
+- Previews + free preview PDF: `python3 make_previews.py` (add new products to `PRODUCTS`).
