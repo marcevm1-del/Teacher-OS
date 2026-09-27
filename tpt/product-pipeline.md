@@ -33,7 +33,8 @@ Publish checklist:
 | 6 | ✅ **Paper 1 Practice Pack Volume 2** (Sets 4–6). **BUILT**: `IGCSE-0500-Paper-1-Practice-Pack-Vol-2-2027.pdf`, listing + Paper 1 Mock Bundle ($16.99) in `listing-launch-6.md` | 29 pp | $9.99 | **Ready now** |
 | 7 | ✅ **Paper 2 Directed Writing Volume 2** (Tasks 5–8). **BUILT**: `IGCSE-0500-Paper-2-Directed-Writing-Pack-Vol-2-2027.pdf`, listing + Paper 2 Bundle ($16.99) in `listing-launch-7.md` | 27 pp | $9.99 | **Ready now** |
 | 8 | ✅ **Language Analysis Workbook** (Q3). **BUILT**: `IGCSE-0500-Language-Analysis-Workbook-2027.pdf`, listing in `listing-launch-8.md` | 14 pp | $6.99 | **Ready now** |
-| 8b | **0500 Complete Bundle** (all eight). Final listing in `listing-launch-4.md`; thumbnail built by `make_previews.py` | 164 pp | $49.99 | **As soon as all are live** |
+| 9 | ✅ **Summary Writing Workbook** (Q2a + 2b). **BUILT**: `IGCSE-0500-Summary-Writing-Workbook-2027.pdf`, listing in `listing-launch-9.md` | 23 pp | $6.99 | **Ready now** |
+| 9b | **0500 Complete Bundle** (all nine). Final listing in `listing-launch-4.md`; thumbnail built by `make_previews.py` | 187 pp | $54.99 | **As soon as all are live** |
 | 7 | Exam-season **revision booklet** for students (a cut-down version of #1 + practice) | 12 pp | $5.99 | Mar 2027 |
 
 Every product must use **original texts only**. Don't copy Cambridge past papers or mark schemes. Keep the "not endorsed by Cambridge" disclaimer on each one.
