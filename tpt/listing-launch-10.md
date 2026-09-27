@@ -44,7 +44,8 @@ Independent practice material; not produced or endorsed by Cambridge University 
 IGCSE English, 0500, extended response, Paper 1 Question 4, writing in role, journal writing, report writing, interview, speech writing, letter writing, article writing, model answers, Cambridge IGCSE, 2027 syllabus
 
 ## Preview images
-From `previews/extended-response-workbook/`: TPT-preview-1.png (thumbnail) → 2 → 3 → 4
+**Thumbnail (upload first):** `previews/canva/extended-response-workbook.png` (designed in Canva).
+Then, from `previews/extended-response-workbook/`: TPT-preview-2.png → 3 → 4
 Preview file: `previews/extended-response-workbook/FREE-PREVIEW.pdf`
 
 ---

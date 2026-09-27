@@ -37,7 +37,8 @@ Independent practice material based on the published 2027–2029 syllabus; not p
 IGCSE English, 0500, directed writing, Paper 2, persuasive writing, argumentative writing, debate speech, letter to the editor, report writing, article writing, evaluation, model answers, Cambridge IGCSE, 2027 syllabus
 
 ## Preview images
-From `previews/paper2-pack-vol2/`: TPT-preview-1.png (thumbnail) → 2 → 3 → 4
+**Thumbnail (upload first):** `previews/canva/paper2-pack-vol2.png` (designed in Canva).
+Then, from `previews/paper2-pack-vol2/`: TPT-preview-2.png → 3 → 4
 Preview file: `previews/paper2-pack-vol2/FREE-PREVIEW.pdf`
 
 ---

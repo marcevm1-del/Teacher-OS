@@ -52,7 +52,7 @@ This is an independent study guide based on the published 2027–2029 syllabus. 
 IGCSE English, 0500, First Language English, Cambridge IGCSE, IGCSE revision, directed writing, summary writing, writer's effects, language analysis, descriptive writing, narrative writing, exam prep, test prep, reading comprehension, composition
 
 ## Upload order for preview images
-1. TPT-preview-1.png (cover — this is your thumbnail)
+1. `previews/canva/exam-guide.png` (designed in Canva: this is your thumbnail)
 2. TPT-preview-2.png (what's inside)
 3. TPT-preview-3.png (weak vs strong answers)
 4. TPT-preview-4.png (timing, mistakes, checklist)

@@ -39,7 +39,8 @@ Independent practice material based on the published 2027–2029 syllabus; not p
 IGCSE English, 0500, practice papers, mock exam, Paper 1 Reading, summary writing, language analysis, reading comprehension, extended response, interview writing, speech writing, exam prep, Cambridge IGCSE, 2027 syllabus
 
 ## Preview images
-From `previews/paper1-pack-vol2/`: TPT-preview-1.png (thumbnail) → 2 → 3 → 4
+**Thumbnail (upload first):** `previews/canva/paper1-pack-vol2.png` (designed in Canva).
+Then, from `previews/paper1-pack-vol2/`: TPT-preview-2.png → 3 → 4
 Preview file: `previews/paper1-pack-vol2/FREE-PREVIEW.pdf`
 
 ---

@@ -46,5 +46,6 @@ Independent practice material; not produced or endorsed by Cambridge University 
 IGCSE English, 0500, language analysis, writer's effects, language task, Paper 1 Question 3, connotations, close reading, reading comprehension, workbook, model answers, Cambridge IGCSE, 2027 syllabus
 
 ## Preview images
-From `previews/language-workbook/`: TPT-preview-1.png (thumbnail) → 2 → 3 → 4
+**Thumbnail (upload first):** `previews/canva/language-workbook.png` (designed in Canva).
+Then, from `previews/language-workbook/`: TPT-preview-2.png → 3 → 4
 Preview file: `previews/language-workbook/FREE-PREVIEW.pdf`

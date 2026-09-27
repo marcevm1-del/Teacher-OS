@@ -52,7 +52,8 @@ This is independent practice material. It is not produced or endorsed by Cambrid
 IGCSE English, 0500, composition, descriptive writing, narrative writing, creative writing, story writing, writing prompts, model answers, show don't tell, Paper 2, exam prep, Cambridge IGCSE, 2027 syllabus
 
 ## Preview images (upload in this order)
-From `previews/composition-pack/`: TPT-preview-1.png (thumbnail) → 2 → 3 → 4.
+**Thumbnail (upload first):** `previews/canva/composition-pack.png` (designed in Canva).
+Then, from `previews/composition-pack/`: TPT-preview-2.png → 3 → 4.
 Preview file: `previews/composition-pack/FREE-PREVIEW.pdf`
 
 ---
@@ -84,4 +85,4 @@ INCLUDED
 
 210 pages covering every question on both papers, enough for two years of Year 10–11 teaching.
 
-(Use the same grades, tags and disclaimer as the individual listings. Thumbnail: `previews/bundle/TPT-bundle-thumbnail.png`.)
+(Use the same grades, tags and disclaimer as the individual listings. Thumbnail: `previews/canva/bundle.png` (designed in Canva); `previews/bundle/TPT-bundle-thumbnail.png` shows all ten covers and makes a good second image.)

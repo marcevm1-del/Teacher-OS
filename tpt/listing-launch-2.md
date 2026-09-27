@@ -56,7 +56,7 @@ IGCSE English, 0500, First Language English, IGCSE practice papers, mock exam, P
 
 ## Preview images (upload in this order)
 From `previews/paper1-pack/`:
-1. TPT-preview-1.png: cover (this is your thumbnail)
+1. `previews/canva/paper1-pack.png` (designed in Canva: this is your thumbnail)
 2. TPT-preview-2.png: text + question paper
 3. TPT-preview-3.png: mark schemes
 4. TPT-preview-4.png: how to use, marking bands, score tracker

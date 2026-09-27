@@ -42,7 +42,8 @@ Independent resource based on the published 2027–2029 syllabus; not produced o
 IGCSE English, 0500, 2027 syllabus, syllabus changes, Cambridge IGCSE, First Language English, scheme of work, curriculum planning, department meeting, free, teacher briefing, exam prep
 
 ## Preview images
-From `previews/teacher-briefing/`: TPT-preview-1.png (thumbnail) → 2 → 3
+**Thumbnail (upload first):** `previews/canva/teacher-briefing.png` (designed in Canva).
+Then, from `previews/teacher-briefing/`: TPT-preview-2.png → 3
 
 ## Why free matters
 On TPT, free resources are the main way new buyers find a store. Every download is a chance for a follow and a review, and followers are notified when you post a new product. Post this one first. Then, when a paid product goes live, TPT tells your followers.

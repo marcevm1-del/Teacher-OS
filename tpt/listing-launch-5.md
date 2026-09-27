@@ -44,5 +44,6 @@ Independent revision material; not produced or endorsed by Cambridge University 
 IGCSE English, 0500, flashcards, revision cards, exam revision, Cambridge IGCSE, First Language English, study cards, test prep, language techniques, command words, 2027 syllabus
 
 ## Preview images
-From `previews/revision-cards/`: TPT-preview-1.png (thumbnail) → 2 → 3
+**Thumbnail (upload first):** `previews/canva/revision-cards.png` (designed in Canva).
+Then, from `previews/revision-cards/`: TPT-preview-2.png → 3
 Preview file: `previews/revision-cards/FREE-PREVIEW.pdf`

@@ -45,5 +45,6 @@ Independent practice material; not produced or endorsed by Cambridge University 
 IGCSE English, 0500, summary writing, Paper 1 Question 2, writer's attitude, own words, reading comprehension, selective summary, workbook, model answers, Cambridge IGCSE, 2027 syllabus
 
 ## Preview images
-From `previews/summary-workbook/`: TPT-preview-1.png (thumbnail) → 2 → 3 → 4
+**Thumbnail (upload first):** `previews/canva/summary-workbook.png` (designed in Canva).
+Then, from `previews/summary-workbook/`: TPT-preview-2.png → 3 → 4
 Preview file: `previews/summary-workbook/FREE-PREVIEW.pdf`

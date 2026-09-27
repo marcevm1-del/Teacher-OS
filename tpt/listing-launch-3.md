@@ -56,7 +56,7 @@ IGCSE English, 0500, directed writing, Paper 2, persuasive writing, argumentativ
 
 ## Preview images (upload in this order)
 From `previews/paper2-pack/`:
-1. TPT-preview-1.png: cover (thumbnail)
+1. `previews/canva/paper2-pack.png` (designed in Canva: this is your thumbnail)
 2. TPT-preview-2.png: source text + question paper
 3. TPT-preview-3.png: model answer + mark scheme
 4. TPT-preview-4.png: toolkit, planning frame, marking bands
