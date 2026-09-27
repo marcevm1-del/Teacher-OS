@@ -20,6 +20,15 @@ PRODUCTS = {
             ("Detailed mark schemes", "Answers, summary points & indicative content", [9, 10]),
             ("Marking bands + score tracker", "Ready for mocks, homework and tutoring", [2, 27, 28]),
         ]),
+    "IGCSE-0500-Paper-1-Practice-Pack-Vol-2-2027.pdf": dict(
+        out="previews/paper1-pack-vol2", banner="Cambridge IGCSE 0500 · New 2027 format · 29-page PDF",
+        free_pages=[1, 2, 4, 8],
+        slides=[
+            ("IGCSE 0500 Paper 1 Practice Pack 2", "3 more full papers: Sets 4–6", [1]),
+            ("9 new original texts + question papers", "Journeys · The Natural World · Belonging", [12, 8]),
+            ("Detailed mark schemes", "Answers, summary points & indicative content", [9, 10]),
+            ("Q4 in new forms: interview, speech, article", "Plus marking bands and score tracker", [16, 27, 28]),
+        ]),
     "IGCSE-0500-Paper-2-Directed-Writing-Pack-2027.pdf": dict(
         out="previews/paper2-pack", banner="Cambridge IGCSE 0500 · New 2027 format · 27-page PDF",
         free_pages=[1, 2, 3, 7],
