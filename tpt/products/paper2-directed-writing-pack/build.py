@@ -1,12 +1,21 @@
-"""Build the Paper 2 Directed Writing Pack: content.py -> pack.html -> PDF."""
+"""Build a Paper 2 Directed Writing Pack volume: content.py -> pack.html -> PDF.
+
+Usage: python3 build.py [content_dir]   (default: this folder = Volume 1)
+"""
 import pathlib, re, sys
-from content import TASKS
 sys.path.insert(0, str(pathlib.Path(__file__).parent.parent))
 from common import CSS, render_pdf
 
-HERE = pathlib.Path(__file__).parent
-OUT_PDF = HERE.parent.parent / "IGCSE-0500-Paper-2-Directed-Writing-Pack-2027.pdf"
-TITLE = "IGCSE 0500 Paper 2 Directed Writing Pack"
+HERE = pathlib.Path(sys.argv[1]).resolve() if len(sys.argv) > 1 else pathlib.Path(__file__).parent
+sys.path.insert(0, str(HERE))
+import content
+TASKS = content.TASKS
+META = dict(out="IGCSE-0500-Paper-2-Directed-Writing-Pack-2027.pdf", title="Directed Writing",
+            footer="IGCSE 0500 Paper 2 Directed Writing Pack")
+META.update(getattr(content, "META", {}))
+OUT_PDF = pathlib.Path(__file__).parent.parent.parent / META["out"]
+TITLE = META["footer"]
+N_TEXTS = sum(len(t["texts"]) for t in TASKS)
 
 def words(html):
     return len(re.sub(r"<[^>]+>", " ", html).split())
@@ -78,14 +87,14 @@ def build():
     for t in TASKS:
         print(f"task {t['n']}: insert {sum(words(''.join(x['paras'])) for x in t['texts'])} words, model {words(t['model'])} words")
 
-COVER = '''<section class="cover"><div class="frame">
+COVER = f'''<section class="cover"><div class="frame">
 <div class="brand">PASSWITHPURPOSE</div>
 <div class="badge"><small>NEW</small>2027<small>FORMAT</small></div>
 <div class="kicker">CAMBRIDGE IGCSE · FIRST LANGUAGE ENGLISH · 0500</div>
-<h1>Paper 2<br><em>Directed Writing</em></h1>
+<h1>Paper 2<br><em>{META['title']}</em></h1>
 <p class="lede">Four complete Section A tasks for the new 2027 exam, covering the 1(a) structured question and 1(b) directed writing, with model answers for a speech, a letter, an article and a report.</p>
 <ul class="feat">
-<li>4 full Section A tasks (160 marks)</li><li>6 original source texts</li>
+<li>4 full Section A tasks (160 marks)</li><li>{N_TEXTS} original source texts</li>
 <li>New 1(a) evaluation questions</li><li>1(b) in all four forms</li>
 <li>4 annotated model answers</li><li>Mark schemes & indicative content</li>
 <li>Planning frame & form toolkit</li><li>Evaluation phrase bank</li>
@@ -94,7 +103,7 @@ COVER = '''<section class="cover"><div class="frame">
 <div class="disc">For exams in 2027, 2028 and 2029. Independent practice material; not produced or endorsed by Cambridge University Press &amp; Assessment. All texts are original.</div>
 </div></section>'''
 
-HOWTO = '''<section class="page">
+HOWTO = f'''<section class="page">
 <div class="eyebrow">Start here</div>
 <h2>How to use this pack</h2>
 <p>From June 2027, Section A of Cambridge IGCSE First Language English (0500) Paper 2 gives candidates one or two texts (about 550–650 words in total) and two linked questions. This pack gives you four complete tasks in that format, one for each form candidates may be asked to write.</p>
@@ -105,10 +114,7 @@ HOWTO = '''<section class="page">
 </table>
 <h3>The four tasks</h3>
 <table class="glance">
-<tr><td>Task 1</td><td>Phones in Schools</td><td>Two texts</td><td>Speech</td></tr>
-<tr><td>Task 2</td><td>Paying for Paradise</td><td>One text</td><td>Letter</td></tr>
-<tr><td>Task 3</td><td>Compulsory School Sport</td><td>Two texts</td><td>Article</td></tr>
-<tr><td>Task 4</td><td>The Future of the Library</td><td>One text</td><td>Report</td></tr>
+{"".join(f'<tr><td>Task {t["n"]}</td><td>{t["topic"]}</td><td>{"Two texts" if len(t["texts"]) > 1 else "One text"}</td><td>{t["form"].capitalize()}</td></tr>' for t in TASKS)}
 </table>
 <h3>The five-step method for 1(b)</h3>
 <table class="glance">
@@ -121,7 +127,7 @@ HOWTO = '''<section class="page">
 <div class="uses">
 <div><b>Timed practice</b><br>Print the insert and question paper. Allow about one hour for Section A.</div>
 <div><b>Teach the form</b><br>Study the model answer and its notes first, then set a different task in the same form.</div>
-<div><b>Tutoring</b><br>Use Task 1 to diagnose, then work on the weakest strand: evaluation, form or accuracy.</div>
+<div><b>Tutoring</b><br>Use Task {TASKS[0]['n']} to diagnose, then work on the weakest strand: evaluation, form or accuracy.</div>
 </div>
 </section>'''
 
@@ -206,11 +212,11 @@ BANDS = '''<section class="page ms">
 <div class="tip"><b>QUICK CHECK:</b> An answer that only repeats the text rarely scores above 6 for Reading, however well it is written. Look for the words “however”, “but”, “this suggests” and “this overlooks”. They usually mark where the evaluation is.</div>
 </section>'''
 
-TRACKER = '''<section class="page">
+TRACKER = f'''<section class="page">
 <div class="eyebrow">Progress</div>
 <h2>Score tracker</h2>
 <table class="track">
-<tr><th>Part</th><th>Max</th><th>Task 1</th><th>Task 2</th><th>Task 3</th><th>Task 4</th></tr>
+<tr><th>Part</th><th>Max</th>{''.join(f'<th>Task {t["n"]}</th>' for t in TASKS)}</tr>
 <tr><td>1(a) Analysis &amp; evaluation</td><td>5</td><td></td><td></td><td></td><td></td></tr>
 <tr><td>1(b) Reading</td><td>10</td><td></td><td></td><td></td><td></td></tr>
 <tr><td>1(b) Writing</td><td>25</td><td></td><td></td><td></td><td></td></tr>
@@ -228,7 +234,8 @@ END = '''<section class="page end">
 <div class="eyebrow">Next step</div>
 <h2>Complete your 0500 preparation</h2>
 <p><b>IGCSE 0500 Complete Exam Guide (2027):</b> the method for every question on both papers, with model answers, timing plans and the top 10 mark-losing mistakes.</p>
-<p><b>IGCSE 0500 Paper 1 Practice Pack (2027):</b> three full Paper 1 Reading practice papers with original texts and detailed mark schemes.</p>
+<p><b>IGCSE 0500 Paper 1 Practice Packs 1 &amp; 2 (2027):</b> six full Paper 1 Reading practice papers with original texts and detailed mark schemes.</p>
+<p><b>Paper 2 Directed Writing</b> comes in two volumes: Tasks 1–4 and Tasks 5–8.</p>
 <p>Search <b>PassWithPurpose</b> on Teachers Pay Teachers.</p>
 <div class="tip"><b>ENJOYED THIS PACK?</b> A short review on TPT helps other teachers find it, and earns you TPT credits towards your next purchase.</div>
 <p class="small">© 2026 Marcé van Moerkerken · PassWithPurpose. Licensed for use by one teacher/classroom or one student. Please do not share or upload to public websites. Based on the published Cambridge IGCSE First Language English 0500 syllabus for 2027–2029. This is independent practice material and is not produced, endorsed or approved by Cambridge University Press &amp; Assessment. All texts, people and places are fictional.</p>

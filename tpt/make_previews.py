@@ -38,6 +38,15 @@ PRODUCTS = {
             ("Annotated model answers", "Top-band responses with mark schemes", [9, 8]),
             ("Toolkit, planning frame & marking bands", "Teach students to evaluate, not repeat", [3, 4, 25]),
         ]),
+    "IGCSE-0500-Paper-2-Directed-Writing-Pack-Vol-2-2027.pdf": dict(
+        out="previews/paper2-pack-vol2", banner="Cambridge IGCSE 0500 · New 2027 format · 27-page PDF",
+        free_pages=[1, 2, 3, 7],
+        slides=[
+            ("IGCSE 0500 Paper 2 Directed Writing 2", "4 more Section A tasks: Tasks 5–8", [1]),
+            ("New topics, texts & question papers", "Exams vs coursework · space · car-free towns · teen jobs", [5, 7]),
+            ("Annotated model answers", "Article, speech, letter and report", [9, 8]),
+            ("Toolkit, planning frame & marking bands", "Teach students to evaluate, not repeat", [3, 4, 25]),
+        ]),
     "IGCSE-0500-Composition-Pack-2027.pdf": dict(
         out="previews/composition-pack", banner="Cambridge IGCSE 0500 · Paper 2 Section B · 17-page PDF",
         free_pages=[1, 2, 3, 5],

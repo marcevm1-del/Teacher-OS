@@ -31,7 +31,8 @@ Publish checklist:
 | 5b | ✅ **Revision Flashcards** (32 cards). **BUILT**: `IGCSE-0500-Revision-Flashcards-2027.pdf`, listing in `listing-launch-5.md` | 7 pp | $4.99 | **Ready now** |
 | 6 | **0500 Starter Bundle** (#1 + #2). Listing in `listing-launch-2.md` | — | $18.99 | **As soon as #1 and #2 are live** |
 | 6 | ✅ **Paper 1 Practice Pack Volume 2** (Sets 4–6). **BUILT**: `IGCSE-0500-Paper-1-Practice-Pack-Vol-2-2027.pdf`, listing + Paper 1 Mock Bundle ($16.99) in `listing-launch-6.md` | 29 pp | $9.99 | **Ready now** |
-| 6b | **0500 Complete Bundle** (all six). Final listing in `listing-launch-4.md` | 123 pp | $37.99 | **As soon as all are live** |
+| 7 | ✅ **Paper 2 Directed Writing Volume 2** (Tasks 5–8). **BUILT**: `IGCSE-0500-Paper-2-Directed-Writing-Pack-Vol-2-2027.pdf`, listing + Paper 2 Bundle ($16.99) in `listing-launch-7.md` | 27 pp | $9.99 | **Ready now** |
+| 7b | **0500 Complete Bundle** (all seven). Final listing in `listing-launch-4.md` | 150 pp | $44.99 | **As soon as all are live** |
 | 7 | Exam-season **revision booklet** for students (a cut-down version of #1 + practice) | 12 pp | $5.99 | Mar 2027 |
 
 Every product must use **original texts only**. Don't copy Cambridge past papers or mark schemes. Keep the "not endorsed by Cambridge" disclaimer on each one.

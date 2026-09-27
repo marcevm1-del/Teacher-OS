@@ -1,6 +1,6 @@
 # Launch & marketing plan: PassWithPurpose
 
-Products only earn once people find them. This plan gets all nine listings live in one week, then drives traffic for four weeks. The time needed is about 20–30 minutes a day.
+Products only earn once people find them. This plan gets all eleven listings live in one week, then drives traffic for four weeks. The time needed is about 20–30 minutes a day.
 
 ## Launch week: publish in this order
 
@@ -11,8 +11,8 @@ Products only earn once people find them. This plan gets all nine listings live 
 | 3 | **#2 Paper 1 Practice Pack** (`listing-launch-2.md`) | Highest demand: mocks in the new format |
 | 4 | **#3 Paper 2 Directed Writing Pack** (`listing-launch-3.md`) | |
 | 5 | **#4 Composition Pack** (`listing-launch-4.md`) | |
-| 6 | **#5 Revision Flashcards** (`listing-launch-5.md`) + **#6 Paper 1 Pack Volume 2** (`listing-launch-6.md`) | Low-price entry product; more mocks |
-| 7 | **Paper 1 Mock Bundle** (`listing-launch-6.md`) + **Complete Bundle** (bundle section of `listing-launch-4.md`, thumbnail `previews/bundle/TPT-bundle-thumbnail.png`) | Highest earnings per sale; needs all products live |
+| 6 | **#5 Revision Flashcards** (`listing-launch-5.md`) + **#6 Paper 1 Pack Volume 2** (`listing-launch-6.md`) + **#7 Paper 2 Pack Volume 2** (`listing-launch-7.md`) | Low-price entry product; more practice |
+| 7 | **Paper 1 Mock Bundle** (`listing-launch-6.md`) + **Paper 2 Bundle** (`listing-launch-7.md`) + **Complete Bundle** (bundle section of `listing-launch-4.md`, thumbnail `previews/bundle/TPT-bundle-thumbnail.png`) | Highest earnings per sale; needs all products live |
 
 TPT tips:
 - **The first 13 words of the title matter most** for search. Every title here starts with "IGCSE English 0500", which is exactly what teachers type.
@@ -49,7 +49,7 @@ TPT tips:
 > My Paper 2 pack has four full tasks (speech, letter, article, report) with annotated model answers that show exactly this: [link]
 
 ### Week 4: the bundle
-> Everything I've made for the new 2027 IGCSE 0500 exam is now in one bundle: the complete exam guide, six Paper 1 practice papers, four Paper 2 directed writing tasks, the composition pack and 32 revision flashcards. That's 123 pages, 32% cheaper than buying them separately: [link]
+> Everything I've made for the new 2027 IGCSE 0500 exam is now in one bundle: the complete exam guide, six Paper 1 practice papers, eight Paper 2 directed writing tasks, the composition pack and 32 revision flashcards. That's 150 pages, 32% cheaper than buying them separately: [link]
 
 **Pinterest** (every week): pin all four preview images of that week's product. Pin title = listing title. Description = first two lines of the listing + "IGCSE English 0500 2027".
 
