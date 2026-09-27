@@ -56,14 +56,20 @@ PRODUCTS = {
         ]),
 }
 
+def fit(pg, rect, text, size, font, color):
+    """Insert text, shrinking the font until it fits (insert_textbox silently drops overflow)."""
+    while pg.insert_textbox(rect, text, fontsize=size, fontname=font, color=color, align=1) < 0:
+        size -= 1
+        assert size > 10, text
+
 def box(x, y, h):
     return (x, y, x + h * A4, y + h)
 
 def slide(src, path, title, sub, pages, banner):
     doc = pymupdf.open(); pg = doc.new_page(width=W, height=H)
     pg.draw_rect(pg.rect, color=None, fill=NAVY)
-    pg.insert_textbox(pymupdf.Rect(30, 30, W - 30, 100), title, fontsize=38, fontname="hebo", color=WHITE, align=1)
-    pg.insert_textbox(pymupdf.Rect(40, 95, W - 40, 140), sub, fontsize=22, fontname="helv", color=GOLD, align=1)
+    fit(pg, pymupdf.Rect(30, 30, W - 30, 100), title, 38, "hebo", WHITE)
+    fit(pg, pymupdf.Rect(40, 95, W - 40, 140), sub, 22, "helv", GOLD)
     n = len(pages)
     h = {1: 760, 2: 600, 3: 420}[n]
     gap = 40 if n == 2 else 24
@@ -75,7 +81,7 @@ def slide(src, path, title, sub, pages, banner):
         pg.draw_rect(r, color=None, fill=WHITE)
         pg.show_pdf_page(r, src, pno - 1)
     pg.draw_rect(pymupdf.Rect(0, H - 60, W, H), color=None, fill=GOLD)
-    pg.insert_textbox(pymupdf.Rect(20, H - 48, W - 20, H - 10), banner, fontsize=22, fontname="hebo", color=NAVY, align=1)
+    fit(pg, pymupdf.Rect(20, H - 48, W - 20, H - 10), banner, 22, "hebo", NAVY)
     pg.get_pixmap(dpi=144).save(path)
 
 for pdf, cfg in PRODUCTS.items():
