@@ -19,7 +19,7 @@ COVER = '''<section class="cover"><div class="frame">
 <p class="lede">Ready-to-teach resources for the new 2027 Cambridge IGCSE First Language English exam, licensed for your whole department.</p>
 <ul class="feat">
 <li>Complete Exam Guide</li><li>6 full Paper 1 practice papers</li>
-<li>8 Paper 2 Section A tasks</li><li>Composition Pack</li>
+<li>8 Paper 2 Section A tasks</li><li>Composition &amp; Q3 workbooks</li>
 <li>32 revision flashcards</li><li>Every teacher, every class</li>
 <li>Print for every student</li><li>Free updates to 2029</li>
 </ul>
@@ -37,13 +37,14 @@ BODY = f'''<section class="page">
 <tr><td>Complete Exam Guide</td><td>Method for every question on both papers, weak vs strong answers, timing plans</td><td>14</td></tr>
 <tr><td>Paper 1 Practice Packs 1 &amp; 2</td><td>6 full papers in the new format, 18 original texts, mark schemes, marking bands</td><td>58</td></tr>
 <tr><td>Paper 2 Directed Writing 1 &amp; 2</td><td>8 Section A tasks (speeches, letters, articles, reports), annotated model answers</td><td>54</td></tr>
+<tr><td>Language Analysis Workbook</td><td>Six extracts with guided practice and model answers for the Q3 language task</td><td>14</td></tr>
 <tr><td>Composition Pack</td><td>Descriptive and narrative toolkits, 20 titles, 4 annotated model compositions</td><td>17</td></tr>
 <tr><td>Revision Flashcards</td><td>32 printable cards covering every method, form and timing plan</td><td>7</td></tr>
 </table>
 <h3>Licence options</h3>
 <table class="glance price">
 <tr><th>Option</th><th>Includes</th><th>Price</th></tr>
-<tr><td>Department Licence</td><td>All seven resources for every English teacher in one school; unlimited printing for your students; free updates for the 2027–2029 syllabus</td><td><b>{PRICE_LICENCE} AED</b></td></tr>
+<tr><td>Department Licence</td><td>All eight resources for every English teacher in one school; unlimited printing for your students; free updates for the 2027–2029 syllabus</td><td><b>{PRICE_LICENCE} AED</b></td></tr>
 <tr><td>Department Licence + CPD</td><td>Everything above plus a 60-minute online session for your team: “Teaching the 2027 0500 changes”</td><td><b>{PRICE_LICENCE_CPD} AED</b></td></tr>
 <tr><td>Group of schools</td><td>Licences for several schools in one group</td><td>On request</td></tr>
 </table>

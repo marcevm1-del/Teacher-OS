@@ -56,6 +56,15 @@ PRODUCTS = {
             ("4 annotated model compositions", "Two descriptive, two narrative, with notes", [11, 13]),
             ("20 titles, planning sheets & workshop", "Ready for lessons, homework and tutoring", [5, 7, 9]),
         ]),
+    "IGCSE-0500-Language-Analysis-Workbook-2027.pdf": dict(
+        out="previews/language-workbook", banner="Cambridge IGCSE 0500 · Paper 1 Q3 · 14-page PDF",
+        free_pages=[1, 2, 3, 4],
+        slides=[
+            ("IGCSE 0500 Language Analysis Workbook", "Master the Paper 1 Q3 language task", [1]),
+            ("Guided practice: Choose → Zoom → Connect", "Original extracts with a worked example", [4, 5]),
+            ("Model answers for every extract", "Six top-band responses, 200–250 words", [10, 11]),
+            ("Six mistakes that cost marks", "Weak vs strong, side by side", [3, 13]),
+        ]),
     "FREE-IGCSE-0500-2027-Changes-Teacher-Briefing.pdf": dict(
         out="previews/teacher-briefing", banner="FREE · Cambridge IGCSE 0500 · 2027 changes briefing",
         free_pages=[1, 2],
@@ -102,6 +111,37 @@ def slide(src, path, title, sub, pages, banner):
     fit(pg, pymupdf.Rect(20, H - 48, W - 20, H - 10), banner, 22, "hebo", NAVY)
     pg.get_pixmap(dpi=144).save(path)
 
+BUNDLE = dict(
+    files=["IGCSE-0500-Complete-Exam-Guide-2027.pdf", "IGCSE-0500-Paper-1-Practice-Pack-2027.pdf",
+           "IGCSE-0500-Paper-1-Practice-Pack-Vol-2-2027.pdf", "IGCSE-0500-Language-Analysis-Workbook-2027.pdf",
+           "IGCSE-0500-Paper-2-Directed-Writing-Pack-2027.pdf", "IGCSE-0500-Paper-2-Directed-Writing-Pack-Vol-2-2027.pdf",
+           "IGCSE-0500-Composition-Pack-2027.pdf", "IGCSE-0500-Revision-Flashcards-2027.pdf"],
+    title="IGCSE 0500 COMPLETE BUNDLE",
+    sub="8 resources · 164 pages · every question on both papers",
+    banner="Updated for the NEW 2027 syllabus · Save 31%",
+    out="previews/bundle/TPT-bundle-thumbnail.png")
+
+def bundle_thumbnail(cfg):
+    doc = pymupdf.open(); pg = doc.new_page(width=W, height=H)
+    pg.draw_rect(pg.rect, color=None, fill=NAVY)
+    fit(pg, pymupdf.Rect(20, 28, W - 20, 100), cfg["title"], 36, "hebo", WHITE)
+    fit(pg, pymupdf.Rect(30, 86, W - 30, 126), cfg["sub"], 22, "helv", GOLD)
+    files = cfg["files"]; n = len(files); top = (n + 1) // 2
+    rows = [files[:top], files[top:]]
+    h, gap = 315, 18
+    w = h * A4
+    for r, (row, y) in enumerate(zip(rows, (160, 160 + h + 28))):
+        x0 = (W - (len(row) * w + (len(row) - 1) * gap)) / 2
+        for k, f in enumerate(row):
+            rect = pymupdf.Rect(x0 + k * (w + gap), y, x0 + k * (w + gap) + w, y + h)
+            pg.draw_rect(rect + (5, 5, 5, 5), color=None, fill=(0, 0, 0), fill_opacity=0.4)
+            pg.show_pdf_page(rect, pymupdf.open(HERE / f), 0)
+            pg.draw_rect(rect, color=GOLD, width=0.8)
+    pg.draw_rect(pymupdf.Rect(0, H - 60, W, H), color=None, fill=GOLD)
+    fit(pg, pymupdf.Rect(20, H - 48, W - 20, H - 10), cfg["banner"], 22, "hebo", NAVY)
+    (HERE / cfg["out"]).parent.mkdir(parents=True, exist_ok=True)
+    pg.get_pixmap(dpi=144).save(HERE / cfg["out"])
+
 for pdf, cfg in PRODUCTS.items():
     src = pymupdf.open(HERE / pdf)
     out = HERE / cfg["out"]; out.mkdir(parents=True, exist_ok=True)
@@ -112,3 +152,6 @@ for pdf, cfg in PRODUCTS.items():
         free.insert_pdf(src, from_page=p - 1, to_page=p - 1)
     free.save(out / "FREE-PREVIEW.pdf", garbage=3, deflate=True)
     print("built", out)
+
+bundle_thumbnail(BUNDLE)
+print("built", BUNDLE["out"])

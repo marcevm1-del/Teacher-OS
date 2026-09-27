@@ -11,7 +11,7 @@ The operating system for the Five-Year Vow (2026 → 2031).
 | [`money/school-sales-kit.md`](money/school-sales-kit.md) | Sell Department Licences to schools directly (750 AED each), with emails and an offer sheet |
 | [`tutoring/8-lesson-programme.md`](tutoring/8-lesson-programme.md) | Ready-to-teach 8-lesson plan for the 1,600 AED tutoring package |
 | [`tutoring/exam-bootcamp.md`](tutoring/exam-bootcamp.md) | 4-session exam-season group course (600 AED per student, up to 7,200 AED per season) |
-| [`tpt/`](tpt/) | TPT products ready to upload: free 2027 briefing, #1 Exam Guide, #2 Paper 1 Pack, #3 Paper 2 Pack, #4 Composition Pack, #5 Flashcards, #6 Paper 1 Pack Vol. 2, #7 Paper 2 Pack Vol. 2, three bundles |
+| [`tpt/`](tpt/) | TPT products ready to upload: free 2027 briefing, #1 Exam Guide, #2 Paper 1 Pack, #3 Paper 2 Pack, #4 Composition Pack, #5 Flashcards, #6 Paper 1 Pack Vol. 2, #7 Paper 2 Pack Vol. 2, #8 Language Workbook, three bundles |
 | [`tracker/index.html`](tracker/index.html) | Debt ledger, weigh-in log and Route checklist. Open it in any browser |
 | [`goals/`](goals/) | The original Vow and Route posters |
 
