@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Five-Year Tracker</title>
+<style>
+:root{--bg:#f6f3ec;--card:#fff;--ink:#17253f;--muted:#6b7385;--gold:#c8962b;--line:#e3ddd0;--ok:#2f7d5b}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1729;--card:#18233b;--ink:#eef1f7;--muted:#9aa4b8;--gold:#f0b73a;--line:#2a3654;--ok:#5fc496}}
+:root[data-theme="dark"]{--bg:#0f1729;--card:#18233b;--ink:#eef1f7;--muted:#9aa4b8;--gold:#f0b73a;--line:#2a3654;--ok:#5fc496}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.45 system-ui,-apple-system,Segoe UI,sans-serif}
+main{max-width:860px;margin:0 auto;padding:24px 16px 64px}
+h1{font:600 28px/1.2 Georgia,serif;margin:0 0 4px}
+h2{font:600 19px/1.2 Georgia,serif;margin:0 0 12px}
+.sub{color:var(--muted);margin:0 0 20px}
+section{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px;margin-bottom:16px}
+.big{font:700 34px/1 system-ui;font-variant-numeric:tabular-nums}
+.muted{color:var(--muted);font-size:14px}
+.blocks{display:grid;grid-template-columns:repeat(11,1fr);gap:4px;margin:14px 0 6px}
+.blocks div{aspect-ratio:1;border:1.5px solid var(--gold);border-radius:4px;display:grid;place-items:center;font-size:11px;color:var(--muted)}
+.blocks div.on{background:var(--gold);color:var(--card);font-weight:700}
+form{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+input{font:inherit;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:8px 10px;min-width:0}
+button{font:inherit;background:var(--ink);color:var(--card);border:0;border-radius:8px;padding:8px 14px;cursor:pointer}
+button.ghost{background:none;color:var(--muted);border:1px solid var(--line)}
+ul{list-style:none;padding:0;margin:8px 0 0}
+li{display:flex;justify-content:space-between;gap:8px;padding:6px 0;border-top:1px solid var(--line);font-size:14px}
+li button{padding:0 6px;background:none;color:var(--muted)}
+.weigh{display:grid;grid-template-columns:repeat(auto-fill,minmax(80px,1fr));gap:8px}
+.weigh label{font-size:12px;color:var(--muted);display:block}
+.weigh input{width:100%}
+.year h3{font-size:14px;margin:14px 0 4px;color:var(--gold);letter-spacing:.06em}
+.chk{display:flex;gap:10px;align-items:flex-start;padding:5px 0;font-size:15px}
+.chk input{margin-top:4px;accent-color:var(--ok)}
+.chk.done span{text-decoration:line-through;color:var(--muted)}
+.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+</style>
+</head>
+<body>
+<main>
+<h1>The Five-Year Vow</h1>
+<p class="sub">Build it slowly. Build it well. Build it to last. · 2026 → 2031</p>
+
+<section>
+  <h2>Debt Ledger</h2>
+  <div class="big" id="bal">33,000 AED</div>
+  <div class="muted" id="pace"></div>
+  <div class="blocks" id="blocks"></div>
+  <div class="muted">One block = 3,000 AED. Target: 3,000/month → debt-free August 2027.</div>
+  <form id="payForm">
+    <input type="date" id="payDate" required>
+    <input type="number" id="payAmt" placeholder="AED paid" min="1" step="1" required style="width:120px">
+    <input type="text" id="payNote" placeholder="Note (optional)" style="flex:1">
+    <button>Log payment</button>
+  </form>
+  <ul id="payList"></ul>
+</section>
+
+<section>
+  <h2>Weigh-In Log</h2>
+  <div class="muted" style="margin-bottom:10px">Target: 72 kg by July 2027.</div>
+  <div class="weigh" id="weigh"></div>
+</section>
+
+<section>
+  <h2>The Route</h2>
+  <div id="route"></div>
+</section>
+
+<section>
+  <h2>Backup</h2>
+  <p class="muted">Saved in this browser only. Export now and then to keep a copy.</p>
+  <div class="row">
+    <button class="ghost" id="exp">Export</button>
+    <label class="ghost" style="cursor:pointer"><input type="file" id="imp" accept="application/json" hidden><span style="border:1px solid var(--line);border-radius:8px;padding:8px 14px;color:var(--muted)">Import</span></label>
+  </div>
+</section>
+</main>
+<script>
+const DEBT=33000, KEY='fiveYearVow.v1';
+const MONTHS=['Oct 2026','Nov 2026','Dec 2026','Jan 2027','Feb 2027','Mar 2027','Apr 2027','May 2027','Jun 2027','Jul 2027'];
+const ROUTE={
+ '2026 · Groundwork':['Job applications out to Dubai schools','Fixed monthly amount set against the debt','Training routine started; first weigh-in logged','TPT Launch #1 published','Tutoring permit + first students','Dungeon Master Pro and lili kept moving'],
+ '2027 · The Turn':['Dungeon Master Pro v1.0 shipped (March)','72 kg reached by July','Stable role secured; Dubai move for August start','33,000 AED debt cleared','Gyming a mastered habit'],
+ '2028 · The Second Income':['lili shipped','Bahrain','Photography course completed','Ed-psych certification underway','First real side income','Gaming PC upgraded (cash)'],
+ '2029 · The Vow Kept':['Married','Japan','Photography business launched','Ed-psych certification completed'],
+ '2030 · First Ground Owned':['Ballito house transferred','Italy','Barista course + one-page café plan'],
+ '2031 · The Horizon':['Bali leasehold signed (stretch)','Charger or Challenger in the driveway','Café pop-up at a weekend market']
+};
+let S={payments:[],weights:{},done:{}};
+try{const r=localStorage.getItem(KEY);if(r)S=Object.assign(S,JSON.parse(r))}catch(e){}
+const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(S))}catch(e){}};
+const fmt=n=>Math.max(0,Math.round(n)).toLocaleString('en-US');
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+function renderDebt(){
+  const paid=S.payments.reduce((a,p)=>a+p.amt,0), left=DEBT-paid;
+  document.getElementById('bal').textContent=left<=0?'DEBT FREE':fmt(left)+' AED';
+  const now=new Date(), start=new Date(2026,9,1);
+  const m=Math.max(0,(now.getFullYear()-start.getFullYear())*12+now.getMonth()-start.getMonth()+1);
+  const target=Math.min(DEBT,m*3000);
+  document.getElementById('pace').textContent=left<=0?'Vow kept.':
+    `Paid ${fmt(paid)} · on-target pace by now: ${fmt(target)} · ${paid>=target?'on track ✓':fmt(target-paid)+' behind'}`;
+  const full=Math.floor(Math.min(paid,DEBT)/3000);
+  document.getElementById('blocks').innerHTML=Array.from({length:11},(_,i)=>`<div class="${i<full?'on':''}">${33-3*i}k</div>`).join('');
+  document.getElementById('payList').innerHTML=[...S.payments].map((p,i)=>({...p,i})).reverse()
+    .map(p=>`<li><span>${esc(p.date)} · <b>${fmt(p.amt)} AED</b>${p.note?' · '+esc(p.note):''}</span><button data-i="${p.i}" title="Remove">✕</button></li>`).join('');
+}
+document.getElementById('payDate').valueAsDate=new Date();
+document.getElementById('payForm').onsubmit=e=>{
+  e.preventDefault();
+  const amt=+document.getElementById('payAmt').value;
+  if(!(amt>0))return;
+  S.payments.push({date:document.getElementById('payDate').value,amt,note:document.getElementById('payNote').value.trim()});
+  save();renderDebt();e.target.reset();document.getElementById('payDate').valueAsDate=new Date();
+};
+document.getElementById('payList').onclick=e=>{
+  const i=e.target.dataset.i; if(i===undefined||!confirm('Remove this payment?'))return;
+  S.payments.splice(+i,1);save();renderDebt();
+};
+
+function renderWeigh(){
+  const el=document.getElementById('weigh');
+  el.innerHTML=MONTHS.map(mo=>`<div><label>${mo}</label><input type="number" step="0.1" data-m="${mo}" value="${S.weights[mo]??''}" placeholder="kg"></div>`).join('');
+  el.oninput=e=>{const m=e.target.dataset.m;if(!m)return;const v=e.target.value;if(v)S.weights[m]=+v;else delete S.weights[m];save()};
+}
+
+function renderRoute(){
+  const el=document.getElementById('route');
+  el.innerHTML=Object.entries(ROUTE).map(([y,items])=>`<div class="year"><h3>${y.toUpperCase()}</h3>${
+    items.map(t=>{const k=y+'|'+t,d=!!S.done[k];return `<label class="chk ${d?'done':''}"><input type="checkbox" data-k="${esc(k)}" ${d?'checked':''}><span>${esc(t)}</span></label>`}).join('')}</div>`).join('');
+  el.onchange=e=>{const k=e.target.dataset.k;if(!k)return;if(e.target.checked)S.done[k]=1;else delete S.done[k];save();e.target.parentElement.classList.toggle('done',e.target.checked)};
+}
+
+document.getElementById('exp').onclick=()=>{
+  const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([JSON.stringify(S,null,2)],{type:'application/json'}));
+  a.download='five-year-vow-backup.json';a.click();
+};
+document.getElementById('imp').onchange=async e=>{
+  const f=e.target.files[0];if(!f)return;
+  try{S=Object.assign({payments:[],weights:{},done:{}},JSON.parse(await f.text()));save();renderAll()}catch(err){alert('That file could not be read.')}
+};
+function renderAll(){renderDebt();renderWeigh();renderRoute()}
+renderAll();
+</script>
+</body>
+</html>
