@@ -46,6 +46,14 @@ PRODUCTS = {
             ("Both papers + the six changes that matter", "With a classroom action for each change", [2, 3]),
             ("Planning map, starters & checklist", "Ready for your next department meeting", [4, 5]),
         ]),
+    "IGCSE-0500-Revision-Flashcards-2027.pdf": dict(
+        out="previews/revision-cards", banner="Cambridge IGCSE 0500 · 32 printable cards · 7-page PDF",
+        free_pages=[1, 2, 3],
+        slides=[
+            ("IGCSE 0500 Revision Flashcards", "Every question, form and technique on 32 cards", [1]),
+            ("Colour-coded by topic", "Paper 1 · Paper 2 · Composition · Language · Technique", [3, 4]),
+            ("Print, cut, revise", "8 cards per A4 page", [5, 6]),
+        ]),
 }
 
 def box(x, y, h):

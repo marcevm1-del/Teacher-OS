@@ -57,25 +57,26 @@ Preview file: `previews/composition-pack/FREE-PREVIEW.pdf`
 
 ---
 
-# TPT Listing: 0500 Complete Bundle, final version (all four products)
+# TPT Listing: 0500 Complete Bundle, final version (all five products)
 
-This replaces the bundles in `listing-launch-2.md` and `listing-launch-3.md` once all four products are live.
+This replaces the bundles in `listing-launch-2.md` and `listing-launch-3.md` once all products are live.
 
 ## Title
 IGCSE English 0500 Complete Bundle 2027 | Guide + Paper 1 + Paper 2 + Composition
 
 ## Price
-$29.99 (bought separately: $40.96, so buyers save 27%)
+$32.99 (bought separately: $45.95, so buyers save 28%)
 
 ## Description
-Everything for the NEW 2027 Cambridge IGCSE First Language English (0500) exam in one bundle: the method, the reading practice, the directed writing practice and the composition practice.
+Everything for the NEW 2027 Cambridge IGCSE First Language English (0500) exam in one bundle: the method, the reading practice, the directed writing practice, the composition practice and revision cards.
 
 INCLUDED
 • IGCSE 0500 Complete Exam Guide 2027 (14 pages): the method for every question on both papers
 • Paper 1 Practice Pack (29 pages): 3 full Paper 1 Reading practice papers with original texts and mark schemes
 • Paper 2 Directed Writing Pack (27 pages): 4 Section A tasks (speech, letter, article, report) with annotated model answers
 • Composition Pack (17 pages): descriptive and narrative toolkits, 20 titles, planning sheets and 4 model compositions
+• Revision Flashcards (32 printable cards): every method, form, technique and timing plan
 
-87 pages covering every question on both papers.
+94 pages covering every question on both papers.
 
-(Use the same grades, tags and disclaimer as the individual listings. Thumbnail: the four covers in a 2 × 2 grid.)
+(Use the same grades, tags and disclaimer as the individual listings. Thumbnail: the covers in a grid.)
