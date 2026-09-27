@@ -7,7 +7,7 @@ The operating system for the Five-Year Vow (2026 → 2031).
 | [`PLAN.md`](PLAN.md) | All the goals in order: this week, the next 90 days, 2027 checkpoints, 2028–31 |
 | [`money/debt-and-income.md`](money/debt-and-income.md) | Clearing the 33,000 AED debt and the side-income plan |
 | [`tutoring/tutoring-kit.md`](tutoring/tutoring-kit.md) | **Fastest cash:** prices, adverts, consultation script, message templates |
-| [`tpt/`](tpt/) | TPT products ready to upload: #1 Exam Guide, #2 Paper 1 Practice Pack, Starter Bundle |
+| [`tpt/`](tpt/) | TPT products ready to upload: #1 Exam Guide, #2 Paper 1 Practice Pack, #3 Paper 2 Directed Writing Pack, Complete Bundle |
 | [`tracker/index.html`](tracker/index.html) | Debt ledger, weigh-in log and Route checklist. Open it in any browser |
 | [`goals/`](goals/) | The original Vow and Route posters |
 

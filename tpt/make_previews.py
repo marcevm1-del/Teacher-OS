@@ -20,6 +20,15 @@ PRODUCTS = {
             ("Detailed mark schemes", "Answers, summary points & indicative content", [9, 10]),
             ("Marking bands + score tracker", "Ready for mocks, homework and tutoring", [2, 27, 28]),
         ]),
+    "IGCSE-0500-Paper-2-Directed-Writing-Pack-2027.pdf": dict(
+        out="previews/paper2-pack", banner="Cambridge IGCSE 0500 · New 2027 format · 27-page PDF",
+        free_pages=[1, 2, 3, 7],
+        slides=[
+            ("IGCSE 0500 Paper 2 Directed Writing", "4 Section A tasks: speech, letter, article, report", [1]),
+            ("Original texts + full question papers", "New 1(a) evaluation question + 1(b) directed writing", [5, 7]),
+            ("Annotated model answers", "Top-band responses with mark schemes", [9, 8]),
+            ("Toolkit, planning frame & marking bands", "Teach students to evaluate, not repeat", [3, 4, 25]),
+        ]),
 }
 
 def box(x, y, h):
