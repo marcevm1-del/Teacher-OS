@@ -40,7 +40,7 @@ Attach: [`PassWithPurpose-Department-Licence-Offer.pdf`](PassWithPurpose-Departm
 > Dear [Name], just a quick follow-up in case this got buried. Would a free sample be useful for your department? Happy to send it today.
 
 ## Step 4: when they say yes to the sample
-- Send: `FREE-IGCSE-0500-2027-Changes-Teacher-Briefing.pdf` + **Set 1 only** of the Paper 1 pack (to make it, copy pages 1–11 of the pack into a new PDF).
+- Send: `tpt/FREE-IGCSE-0500-2027-Changes-Teacher-Briefing.pdf` + `tpt/samples/SCHOOL-SAMPLE-Paper-1-Set-1.pdf` (Set 1 with its mark scheme, marking bands and the resources page, ready to send).
 - Then, 5 days later:
 
 > Dear [Name], I hope the sample was useful. If your team would like the full set before mocks, the Department Licence is 750 AED for every English teacher in the school, with unlimited printing for students. Shall I send an invoice to your finance team?
