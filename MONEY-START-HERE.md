@@ -7,7 +7,7 @@ Everything is built. What's left is uploading, posting and sending. Tick these o
 |---|---|---|
 | **Tutoring** | `tutoring/tutoring-kit.md` (prices, adverts, scripts) + `tutoring/8-lesson-programme.md` | ~3,200 AED/month at 6 students. **Fastest.** |
 | **Schools** | `money/school-sales-kit.md` + offer PDF + sample PDF | 750–1,250 AED per school licence |
-| **TPT** | 1 free + 6 paid products + 2 bundles, all with listings and previews (`tpt/`) | Small at first; builds up month by month |
+| **TPT** | 1 free + 10 paid products + 4 bundles, all with listings and previews (`tpt/`) | Small at first; builds up month by month |
 
 ---
 
@@ -18,9 +18,10 @@ Everything is built. What's left is uploading, posting and sending. Tick these o
 - [ ] **Open a TPT seller account** (store name: PassWithPurpose) and compare Basic vs Premium fees (20 min).
 - [ ] Put your **email + WhatsApp** into `tpt/products/department-offer/build.py` and ask Claude to rebuild the offer PDF (5 min).
 
-## Days 3–9: launch (≈ 30 min a day)
-Follow the upload order in `tpt/marketing-plan.md`: one listing a day, pasting each description from its `listing-*.md` file and uploading its previews.
-- [ ] Day 3 FREE briefing · [ ] Day 4 Exam Guide · [ ] Day 5 Paper 1 Vol 1 · [ ] Day 6 Paper 2 · [ ] Day 7 Composition · [ ] Day 8 Flashcards + Paper 1 Vol 2 · [ ] Day 9 both bundles
+## Days 3–9: launch (≈ 30–45 min a day)
+Follow the upload order in `tpt/marketing-plan.md`, pasting each description from its `listing-*.md` file and uploading its previews.
+- [ ] Day 3 FREE briefing · [ ] Day 4 Exam Guide · [ ] Day 5 Paper 1 Vol 1 · [ ] Day 6 Paper 2 Vol 1 · [ ] Day 7 Composition
+- [ ] Day 8 Flashcards + Paper 1 Vol 2 + Paper 2 Vol 2 · [ ] Day 9 the three workbooks · [ ] Day 10 all four bundles
 
 ## Every day from Day 3: tutoring (≈ 20 min)
 - [ ] Day 3: post the advert in **3 parent groups** + WhatsApp status (`tutoring-kit.md` §2)
@@ -45,7 +46,7 @@ Follow the upload order in `tpt/marketing-plan.md`: one listing a day, pasting e
 | | Target |
 |---|---|
 | Tutoring students on packages | 2–3 |
-| TPT listings live | 9 |
+| TPT listings live | 15 |
 | School emails sent | 20 |
 | Debt paid this month | 3,000 AED |
 
