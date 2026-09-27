@@ -38,6 +38,14 @@ PRODUCTS = {
             ("4 annotated model compositions", "Two descriptive, two narrative, with notes", [11, 13]),
             ("20 titles, planning sheets & workshop", "Ready for lessons, homework and tutoring", [5, 7, 9]),
         ]),
+    "FREE-IGCSE-0500-2027-Changes-Teacher-Briefing.pdf": dict(
+        out="previews/teacher-briefing", banner="FREE · Cambridge IGCSE 0500 · 2027 changes briefing",
+        free_pages=[1, 2],
+        slides=[
+            ("FREE: What Changes in 2027", "A teacher's briefing on the new IGCSE 0500 exam", [1]),
+            ("Both papers + the six changes that matter", "With a classroom action for each change", [2, 3]),
+            ("Planning map, starters & checklist", "Ready for your next department meeting", [4, 5]),
+        ]),
 }
 
 def box(x, y, h):
