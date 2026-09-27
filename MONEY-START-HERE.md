@@ -18,7 +18,7 @@ Everything is built. What's left is uploading, posting and sending. Tick these o
 - [ ] **Open a TPT seller account** (store name: PassWithPurpose) and compare Basic vs Premium fees (20 min).
 - [ ] Put your **email + WhatsApp** into `tpt/products/department-offer/build.py` and ask Claude to rebuild the offer PDF (5 min).
 
-## Days 3–9: launch (≈ 30–45 min a day)
+## Days 3–10: launch (≈ 30–45 min a day)
 Follow the upload order in `tpt/marketing-plan.md`, pasting each description from its `listing-*.md` file and uploading its previews.
 - [ ] Day 3 FREE briefing · [ ] Day 4 Exam Guide · [ ] Day 5 Paper 1 Vol 1 · [ ] Day 6 Paper 2 Vol 1 · [ ] Day 7 Composition
 - [ ] Day 8 Flashcards + Paper 1 Vol 2 + Paper 2 Vol 2 · [ ] Day 9 the three workbooks · [ ] Day 10 all four bundles
@@ -52,5 +52,5 @@ Follow the upload order in `tpt/marketing-plan.md`, pasting each description fro
 
 ## What to ask Claude for next
 - "Fix [anything] in [product]": it edits `content.py` and rebuilds the PDF.
-- "Make Paper 2 Directed Writing Volume 2" / "Make a Q4 extended response pack": more products to sell.
+- "Make Paper 1 Volume 3" / "Make a mock exam pack with full Paper 2 papers" / "Make a Year 9 bridging pack": more products to sell.
 - "Turn my TPT stats into next steps": paste the numbers after 30 days.
